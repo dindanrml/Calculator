@@ -1,0 +1,16 @@
+body {
+    box-sizing: border-box;
+    border-style: solid;
+    border-color: black ;
+    border-radius: 5px;
+    width: 200px;
+    padding: 10px;
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
