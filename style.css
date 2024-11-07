@@ -1,16 +1,12 @@
 body {
-    box-sizing: border-box;
-    border-style: solid;
-    border-color: black ;
-    border-radius: 5px;
-    width: 200px;
-    padding: 10px;
-    display: flex ;
-    justify-content: center;
-    align-items: center;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color:aliceblue;
 }
 
-.buttons {
+.calculatorbuttons {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 10px ;
 }
