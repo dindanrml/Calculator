@@ -4,9 +4,35 @@ body {
     background-color: black;
     color:aliceblue;
 }
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-.calculatorbuttons {
+
+.calculator {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     padding: 10px ;
+    justify-content: center;
+    align-items: center;
 }
+
+.calcbutton {
+    justify-content: center;
+    align-items: center;
+}
+
+.yellow {
+    background-color: rgb(243, 177, 37);
+    color: aliceblue;
+
+}
+
+.red {
+    background-color: red;
+    color: aliceblue;
+
+}
+
