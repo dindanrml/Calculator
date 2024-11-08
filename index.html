@@ -7,35 +7,33 @@
  </head>
 
  <body>
- 
+  <main>
     <div class="calculator">
-        <div class="userInput"></div>
-        <div class="userEntry"></div>
-        <div class="final"></div>
-         <div class="calculatorbuttons">
-                <input type="button" value="AC" class="red" />
-                <input type="button" value="C" class="red" />
-                <input type="button" value="x" class="yellow" onclick="multiply()" />
-                <input type="button" value="÷" class="yellow" onclick="divide()" />
-                <input type="button" value="+" class="yellow" onclick="add()"/>
-                <input type="button" value="-" class="yellow" onclick="equal()"/>
-                <input type="button" value="=" class="yellow" onclick="result()"/>
-                <input type="button" value="." class="yellow" onclick="decimal()"/>
-                <input type="button" value="1" class="number" onclick="kalk(1)"/>
-                <input type="button" value="2" class="number" onclick="kalk(2)"/>
-                <input type="button" value="3" class="number" onclick="kalk(3)"/>
-                <input type="button" value="4" class="number" onclick="kalk(4)"/>
-                <input type="button" value="5" class="number" onclick="kalk(5)"/>
-                <input type="button" value="6" class="number" onclick="kalk(6)"/>
-                <input type="button" value="7" class="number" onclick="kalk(7)"/>
-                <input type="button" value="8" class="number" onclick="kalk(8)"/>
-                <input type="button" value="9" class="number" onclick="kalk(9)"/>
-                <input type="button" value="0" class="number" onclick="kalk(0)"/>
-         </div>
+       <h2 class="display">0</h2>
+       <div class="calcbuttons">
+         <input type="button" value="AC" class="delete" />
+         <input type="button" value="C" class="delete" />
+         <input type="button" value="x" class="operator" onclick="multiply()" />
+         <input type="button" value="÷" class="operator" onclick="divide()" />
+         <input type="button" value="+" class="operator" onclick="add()"/>
+         <input type="button" value="-" class="operator" onclick="equal()"/>
+         <input type="button" value="=" class="operator" onclick="result()"/>
+         <input type="button" value="." class="operator" onclick="decimal()"/>
+         <input type="button" value="1" class="number" onclick="kalk(1)"/>
+         <input type="button" value="2" class="number" onclick="kalk(2)"/>
+         <input type="button" value="3" class="number" onclick="kalk(3)"/>
+         <input type="button" value="4" class="number" onclick="kalk(4)"/>
+         <input type="button" value="5" class="number" onclick="kalk(5)"/>
+         <input type="button" value="6" class="number" onclick="kalk(6)"/>
+         <input type="button" value="7" class="number" onclick="kalk(7)"/>
+         <input type="button" value="8" class="number" onclick="kalk(8)"/>
+         <input type="button" value="9" class="number" onclick="kalk(9)"/>
+         <input type="button" value="0" class="number" onclick="kalk(0)"/>
+       </div>
     </div>
 
 
- <script src="app.js"></script>
-
+  <script src="app.js"></script>
+  </main>
  </body>
 </html>
