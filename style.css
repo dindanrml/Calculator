@@ -26,18 +26,57 @@ h1 {
     text-align: right;
 }
 
+
+/* input */
 input {
     width: 50px;
     height: 50px;
     border-radius: 0;
     font-weight: bold;
+    border: 0px ;
 }
 
-.operator {
+input:active {
+    background-color: #FFFFFF;
+}
+
+input:hover{
+    background-color: #FFFFFF;
+}
+
+
+/* angka */
+.angka {
     background-color: #E5E5E5;
 }
 
+
+/* operator */
+.operator {
+    background-color: #a9a8a8;
+    padding: 0px;
+}
+
+.operator:active {
+    background-color: #6e6e6e;
+}
+
+.operator:hover {
+    background-color: #6e6e6e;
+}
+
+
+/* delete */
 .delete {
     background-color: #FCA311;
+}
+
+.delete:active {
+    background-color: #d98805;
+
+}
+
+.delete:hover {
+    background-color: #d98805;
 
 }
