@@ -1,82 +1,66 @@
-body {
-    margin: 10px;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #000000;
-    color: white;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-main {
+body {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
+    background-color: #131127;
+    font-family: Arial, sans-serif;
 }
 
 .calculator {
-    border: 10px solid #14213D;
-    border-radius: 5px;
-    background-color: #14213D;
+    width: 300px;
+    background-color: #333;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#display {
+    padding: 20px;
+    background-color: #222;
+    color: #fff;
+    font-size: 2em;
+    text-align: right;
+    border-bottom: 1px solid #444;
 }
 
 .calcbuttons {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(4, 1fr);
 }
 
-h1 {
-    text-align: right;
+button {
+    padding: 20px;
+    font-size: 1.5em;
+    color: #333;
+    background-color: #eee;
+    border: 1px solid #ddd;
+    cursor: pointer;
 }
 
-
-/* input */
-input {
-    width: 50px;
-    height: 50px;
-    border-radius: 0;
-    font-weight: bold;
-    border: 0px ;
+button:hover {
+    background-color: #ddd;
 }
 
-input:active {
-    background-color: #FFFFFF;
+button:active {
+    background-color: #ccc;
 }
 
-input:hover{
-    background-color: #FFFFFF;
+button:nth-child(4n) {
+    background-color: #f0a500;
+    color: #fff;
 }
 
-
-/* angka */
-.angka {
-    background-color: #E5E5E5;
+button:nth-child(4n):hover {
+    background-color: #e59500;
 }
 
-
-/* operator */
-.operator {
-    background-color: #a9a8a8;
-    padding: 0px;
-}
-
-.operator:active {
-    background-color: #6e6e6e;
-}
-
-.operator:hover {
-    background-color: #6e6e6e;
-}
-
-
-/* delete */
-.delete {
-    background-color: #FCA311;
-}
-
-.delete:active {
-    background-color: #d98805;
-
-}
-
-.delete:hover {
-    background-color: #d98805;
-
+.result {
+    background-color: rgb(255, 234, 0);
 }

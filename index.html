@@ -9,31 +9,36 @@
  <body>
   <main>
     <div class="calculator">
-       <h2 class="display">0</h2>
+       <div id="display">0</div>
        <div class="calcbuttons">
-         <input type="button" value="AC" class="delete" />
-         <input type="button" value="C" class="delete" />
-         <input type="button" value="x" class="operator" onclick="multiply()" />
-         <input type="button" value="÷" class="operator" onclick="divide()" />
-         <input type="button" value="+" class="operator" onclick="add()"/>
-         <input type="button" value="-" class="operator" onclick="equal()"/>
-         <input type="button" value="=" class="operator" onclick="result()"/>
-         <input type="button" value="." class="operator" onclick="decimal()"/>
-         <input type="button" value="1" class="angka" onclick="kalk(1)"/>
-         <input type="button" value="2" class="angka" onclick="kalk(2)"/>
-         <input type="button" value="3" class="angka" onclick="kalk(3)"/>
-         <input type="button" value="4" class="angka" onclick="kalk(4)"/>
-         <input type="button" value="5" class="angka" onclick="kalk(5)"/>
-         <input type="button" value="6" class="angka" onclick="kalk(6)"/>
-         <input type="button" value="7" class="angka" onclick="kalk(7)"/>
-         <input type="button" value="8" class="angka" onclick="kalk(8)"/>
-         <input type="button" value="9" class="angka" onclick="kalk(9)"/>
-         <input type="button" value="0" class="angka" onclick="kalk(0)"/>
+          <button onclick="deleteAll()">AC</button>
+          <button onclick="deleteDigit()">C</button>
+          <button class="result" button onclick="kalkresult()">=</button>
+          
+          <button onclick="appendoperator('x')">x</button>
+          
+
+          <button onclick="appendkalk('7')">7</button>
+          <button onclick="appendkalk('8')">8</button>
+          <button onclick="appendkalk('9')">9</button>
+          <button onclick="appendoperator('-')">-</button>
+
+          <button onclick="appendkalk('4')">4</button>
+          <button onclick="appendkalk('5')">5</button>
+          <button onclick="appendkalk('6')">6</button>
+          <button onclick="appendoperator('+')">+</button>
+
+          <button onclick="appendkalk('1')">1</button>
+          <button onclick="appendkalk('2')">2</button>
+          <button onclick="appendkalk('3')">3</button>
+          <button onclick="appendoperator('÷')">÷</button>
+          
+
+          <button onclick="appendkalk('.')">.</button>
+          <button onclick="appendkalk('0')">0</button>
        </div>
     </div>
-
-
-  <script src="app.js"></script>
+    <script src="script.js"></script>
   </main>
  </body>
 </html>
